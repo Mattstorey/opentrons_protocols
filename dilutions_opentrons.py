@@ -31,6 +31,10 @@ dilutant_vol_data = V2-stock_vol_data
 stock_vol = stock_vol_data.values.flatten().tolist()
 dilutant_vol = dilutant_vol_data.values.flatten().tolist()
 
+# Drop any empty wells/missing values
+stock_vol = [x for x in stock_vol if str(x) != 'nan']
+dilutant_vol = [x for x in dilutant_vol if str(x) != 'nan']
+
 ##### Opentrons protocol #####
 metadata = {
     'apiLevel': '2.2',
