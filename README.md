@@ -48,7 +48,33 @@ opentrons_simulate normalisation.py
 
 This protocol requires:
 
-- Tips
-- Temp block
+- Tips:
+    1. Opentrons 96 filtertips 20ul; Slots 8 and 9
+    2. Opentrons 96 filtertips 300ul; Slot 6
+
+- Temperature Module: Slot 10
+- 12 well reservoir 22ml: Slot 11
+- 24 tube rack for enzymes: Slots 4 and 7
 - End repair kit
+- Ligation kit
 - Barcodes
+
+## Barcodes rack layout
+
+Barcodes are in held in a 24 tube rack in slot 4. The tubes should be laid out as shown below.
+
+|   | 1    | 2    | 3    | 4    | 5    | 6    |
+|---|------|------|------|------|------|------|
+| A | NB01 | NB02 | NB03 | NB04 | NB05 | NB06 |
+| B | NB07 | NB08 | NB09 | NB10 | NB11 | NB12 |
+| C | NB13 | NB14 | NB15 | NB16 | NB17 | NB18 |
+| D | NB19 | NB20 | NB21 | NB22 | NB23 | NB24 |
+
+## Enzyme rack layout
+
+|   | 1                     | 2                  | 3          | 4                    | 5                  | 6          |
+|---|-----------------------|--------------------|------------|----------------------|--------------------|------------|
+| A | End repair  Buffer 5x | End repair  Enzyme | Empty Tube | Ligation  Master Mix | Ligation  Enhancer | Empty Tube |
+| B |                       |                    |            |                      |                    |            |
+| C |                       |                    |            |                      |                    |            |
+| D | Empty Tube            |                    |            |                      |                    |            |
